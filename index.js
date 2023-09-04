@@ -627,3 +627,75 @@ printArray2(myArray);
 
 // console.log(printArray(myArray)); // Logs the concatenated string
 
+//DOM Manipulation//
+// const h1 = document.querySelector('h1'); 
+// const companyName = document.querySelector('#company-name');
+// const salesPitch = document.querySelector('.sales-pitch');
+// const pTags = document.querySelectorAll('p');
+
+// doucument.querySelector('h1').innerHTML = 'Visit my <a href='http://www.coolsite.net'>site</a>';
+// document.querySelector('h2').setAttribute('class', 'urgent'); 
+// const h1 = document.querySelector('h1'); 
+// const h1Id = document.querySelector('#title'); 
+// console.log(h1); 
+
+// const firstSpan = document.querySelector('span').getAttribute('class');
+// console.log(firstSpan)
+
+// const firstSpan4 = document.querySelector('span'); 
+// console.log(firstSpan4.querySelector('.class'))
+
+// const firstSpan2 = document.getAttribute('class'); 
+
+// const firstSpan3 = document.getElementsByClassName('blue')
+
+// const color = document.querySelector('.blue').style.color = 'blue'; 
+
+// const color2 = document.querySelector('h1')
+// color2.setAttribute('class', 'blue');
+// color2.style.color = 'blue'
+
+// const color3 = document.querySelector('h1')
+// color3.classList.add('blue');
+// color3.style.color = 'blue'
+
+// document.getElementById('title').innerHTML = 'Come on in!';
+
+// document.getElementById('title').innerText = 'Come on in!';
+
+// document.querySelector('#title').innerText = 'Come on in!';
+
+// document.querySelector('#title').innerHTML = 'Come on in!'
+
+
+// const h4El = document.createElement('h4');
+// h4El.innerText = 'Powered by Javascript'; 
+// document.body.appendChild(h4El); 
+
+// //Would only work if the body tag has an id or class attribute
+// const h4El = document.createElement('h4');
+// h4El.innerText = 'Powered by Javascript'; 
+// const bodyTag = document.querySelector('#id');
+// bodyTag.append(h4El);  
+
+
+const h1El = document.getElementById('title'); 
+h1El.remove(); 
+
+const h1El2 = document.querySelector('#title'); 
+h1El.remove(); 
+
+document.getElementById('title').remove();
+
+document.querySelector('#title').remove(); 
+
+const h1titleEl = document.createElement('h1');
+//Below is incorrect. You don't have to query for the h1 tag you just created.//
+//You can just access it through the variable h1titleEl.innerText//
+h1titleEl.querySelector('h1').innerText = 'Welcome Players. Begin the Roman Games';
+document.body.appendChild(h1titleEl); 
+
+
+//This would work. 
+h1titleEl.innerText = 'Welcome Players. Begin the Roman Games';
+document.body.appendChild(h1titleEl);
