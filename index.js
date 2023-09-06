@@ -595,23 +595,23 @@ function saleHotDogs() {
 
 // embraceChange();
 
-const myArray = ['a', 'e', 'i', 'o', 'u'];
+// const myArray = ['a', 'e', 'i', 'o', 'u'];
 
-const printArray = (arr) => {
-  for (let i = 0; i < arr.length; i++) {
-    return arr[i]; 
-  }
-};
+// const printArray = (arr) => {
+//   for (let i = 0; i < arr.length; i++) {
+//     return arr[i]; 
+//   }
+// };
 
-printArray(myArray);
+// printArray(myArray);
 
-function printArray2(arr) {
-  for (let i = 0; i < arr.length; i++) {
-    console.log(arr[i]); 
-  }
-} 
+// function printArray2(arr) {
+//   for (let i = 0; i < arr.length; i++) {
+//     console.log(arr[i]); 
+//   }
+// } 
 
-printArray2(myArray); 
+// printArray2(myArray); 
 
 
 // const myArray = ['a', 'e', 'i', 'o', 'u'];
@@ -679,23 +679,160 @@ printArray2(myArray);
 // bodyTag.append(h4El);  
 
 
-const h1El = document.getElementById('title'); 
-h1El.remove(); 
+// const h1El = document.getElementById('title'); 
+// h1El.remove(); 
 
-const h1El2 = document.querySelector('#title'); 
-h1El.remove(); 
+// const h1El2 = document.querySelector('#title'); 
+// h1El.remove(); 
 
-document.getElementById('title').remove();
+// document.getElementById('title').remove();
 
-document.querySelector('#title').remove(); 
+// document.querySelector('#title').remove(); 
 
-const h1titleEl = document.createElement('h1');
-//Below is incorrect. You don't have to query for the h1 tag you just created.//
-//You can just access it through the variable h1titleEl.innerText//
-h1titleEl.querySelector('h1').innerText = 'Welcome Players. Begin the Roman Games';
-document.body.appendChild(h1titleEl); 
+// const h1titleEl = document.createElement('h1');
+// //Below is incorrect. You don't have to query for the h1 tag you just created.//
+// //You can just access it through the variable h1titleEl.innerText//
+// h1titleEl.querySelector('h1').innerText = 'Welcome Players. Begin the Roman Games';
+// document.body.appendChild(h1titleEl); 
 
 
-//This would work. 
-h1titleEl.innerText = 'Welcome Players. Begin the Roman Games';
-document.body.appendChild(h1titleEl);
+// //This would work. 
+// h1titleEl.innerText = 'Welcome Players. Begin the Roman Games';
+// document.body.appendChild(h1titleEl);
+
+/*-----------------------------------------------------------------
+Challenge: 02-addTwoNumbers
+Difficulty: Basic  
+Prompt:
+Write a function called addTwoNumbers that accepts two numeric arguments and returns the sum of those two numbers.
+If either argument is not a Number, return the value of NaN.
+Examples:
+addTwoNumbers(5, 10) //=> 15
+addTwoNumbers(10, -2) //=> 8
+addTwoNumbers(0, 0) //=> 0
+addTwoNumbers('Hello', 5) //=> NaN
+-----------------------------------------------------------------*/
+// Your solution for 02-addTwoNumbers here:
+
+// function addTwoNumbers(a,b) {
+//   const sum = a + b;
+//   return(sum);
+
+// };
+
+//Use typeof to distinguish information that is being returned. Can have it return any value if// 
+//its not the value you want //
+// console.log(addTwoNumbers('Hello',5));
+
+// let sum = 0
+// const addTwoNumbers2 = (a,b) => {
+//   if(typeof a !== 'number' || typeof b !== 'number') {
+//     return NaN;
+//   }
+//   sum = a + b
+//   return(sum)
+// }
+
+// console.log(addTwoNumbers2('Hello',2));
+// console.log(addTwoNumbers2(5,10));
+
+
+// function addTwoNumbers(a, b) {
+//   if (typeof a === 'number' && typeof b === 'number') {
+//     return a + b;
+//   } else {
+//     return NaN;
+//   }
+// }
+// const array = [1,2,3,4,5,6];
+// const bagOfVowels = ["a","e","i","o","u"];
+
+// function iterate (arr) {
+//   arr.forEach(x => console.log(x))
+// }
+
+// iterate(array); 
+// iterate(bagOfVowels);
+
+// function iterateLoop (arr) {
+//   for (let i = 0; i < arr.length; i++) {
+//       console.log(arr[i])
+//   }
+// };
+
+// iterateLoop(array); 
+// iterateLoop(bagOfVowels); 
+
+// function sayHello() {
+//   console.log('Hello');
+// }
+
+// const sayHello2 = () => {
+//   console.log('Hello Person')
+// }
+
+// document.querySelector('#generate-greeting').onclick = sayHello;
+// sayHello();
+
+// document.querySelector('#generate-greeting').addEventListener('click', sayHello2); 
+
+// document.getElementById('generate-greeting').addEventListener('click', sayHello2); 
+
+
+// function typed(){
+//   const message = document.getElementById('message').value;
+//   console.log(message); 
+// }
+
+// document.getElementById('generate-message').addEventListener('click', typed); 
+
+
+// function handleClick() {
+//   const newTodo = document.getElementById('new-todo').value; 
+//   const newListItem = document.querySelector('.todos');
+//   newListItem.innerHTML = `<li>${newTodo}</li>`; 
+//   document.getElementById("new-todo").value = null;
+
+// };
+
+// Challenge: 03-sumNumbers
+// Difficulty: Basic
+// Prompt:
+// - Write a function called sumNumbers that accepts a single array of numbers and returns the sum of the numbers in the array.
+// - If the array is empty, return 0 (zero).
+// Examples:
+// sumNumbers([10]) //=> 10
+// sumNumbers([5, 10]) //=> 15
+// sumNumbers([2, 10, -5]) //=> 7
+// sumNumbers([]) //=> 0
+// -----------------------------------------------------------------*/
+// // Your solution for 03-sumNumbers here:
+
+// const arr = [1,2,3,4,5];
+// const array1 = [6,2,3,4,1];
+// const array2 = [];
+
+// function sumNumbers(array) {
+//   let sum = 0
+//   for (let i = 0; i < array.length; i++) {
+//     sum += array[i]
+//   }
+//     return(sum);
+  
+// }
+
+// console.log(sumNumbers(array1)); 
+
+/*--- better solution (use forEach unless you have to exit loop early) ---*/
+// function sumNumbers(nums) {
+//   let sum = 0;
+//   nums.forEach(function(num) {
+//     sum += num;
+//   });
+//   return sum;
+// }
+
+/*--- best solution (don't worry, this will make sense soon enough) ---*/
+// function sumNumbers(nums) {
+//   return nums.reduce((sum, num) => sum += num, 0);
+// }
