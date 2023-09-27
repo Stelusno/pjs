@@ -83,15 +83,15 @@
 
 // console.log(saleHotdogs(100));
 
-function saleHotDogs() {
-  if (n < 5) {
-    return 100;
-  } else if (n >= 5 && n < 10) {
-    return 95;
-  } else if (n >= 10) {
-    return 90;
-  } else 0;
-}
+// function saleHotDogs() {
+//   if (n < 5) {
+//     return 100;
+//   } else if (n >= 5 && n < 10) {
+//     return 95;
+//   } else if (n >= 10) {
+//     return 90;
+//   } else 0;
+// }
 
 // function SaleHotDogs(n) {
 //   return n < 5 ? n * 100 : n >=5 && n < 10 ? n * 95 : n >= 10 ? n * 90 : 0
@@ -209,7 +209,7 @@ function saleHotDogs() {
 //   return reversedString;
 // }
 
-// console.log(reverseString('hello'));
+// console.log(String('hello'));
 
 // const favoriteFoods = ['chicken', 'pizza', 'wings', 'turkey burgers'];
 // favoriteFoods.push('fries', 'eggs');
@@ -357,7 +357,7 @@ function saleHotDogs() {
 //   // Calculate the total payment for the current month (principal + interest)
 //   const totalPayment = monthlyPayment + monthlyInterest;
 
-//   // Reduce the remaining balance by the payment amount
+//   //  the remaining balance by the payment amount
 //   remainingBalance -= monthlyPayment;
 
 //   // If the remaining balance becomes negative, set it to zero (loan paid off)
@@ -599,7 +599,7 @@ function saleHotDogs() {
 
 // const printArray = (arr) => {
 //   for (let i = 0; i < arr.length; i++) {
-//     return arr[i]; 
+//     return arr[i];
 //   }
 // };
 
@@ -607,12 +607,11 @@ function saleHotDogs() {
 
 // function printArray2(arr) {
 //   for (let i = 0; i < arr.length; i++) {
-//     console.log(arr[i]); 
+//     console.log(arr[i]);
 //   }
-// } 
+// }
 
-// printArray2(myArray); 
-
+// printArray2(myArray);
 
 // const myArray = ['a', 'e', 'i', 'o', 'u'];
 // let result = "";
@@ -624,32 +623,31 @@ function saleHotDogs() {
 //   return result.trim(); // Remove the trailing space
 // };
 
-
 // console.log(printArray(myArray)); // Logs the concatenated string
 
 //DOM Manipulation//
-// const h1 = document.querySelector('h1'); 
+// const h1 = document.querySelector('h1');
 // const companyName = document.querySelector('#company-name');
 // const salesPitch = document.querySelector('.sales-pitch');
 // const pTags = document.querySelectorAll('p');
 
-// doucument.querySelector('h1').innerHTML = 'Visit my <a href='http://www.coolsite.net'>site</a>';
-// document.querySelector('h2').setAttribute('class', 'urgent'); 
-// const h1 = document.querySelector('h1'); 
-// const h1Id = document.querySelector('#title'); 
-// console.log(h1); 
+// document.querySelector('h1').innerHTML = 'Visit my <a href='http://www.coolsite.net'>site</a>';
+// document.querySelector('h2').setAttribute('class', 'urgent');
+// const h1 = document.querySelector('h1');
+// const h1Id = document.querySelector('#title');
+// console.log(h1);
 
 // const firstSpan = document.querySelector('span').getAttribute('class');
 // console.log(firstSpan)
 
-// const firstSpan4 = document.querySelector('span'); 
+// const firstSpan4 = document.querySelector('span');
 // console.log(firstSpan4.querySelector('.class'))
 
-// const firstSpan2 = document.getAttribute('class'); 
+// const firstSpan2 = document.getAttribute('class');
 
 // const firstSpan3 = document.getElementsByClassName('blue')
 
-// const color = document.querySelector('.blue').style.color = 'blue'; 
+// const color = document.querySelector('.blue').style.color = 'blue';
 
 // const color2 = document.querySelector('h1')
 // color2.setAttribute('class', 'blue');
@@ -667,36 +665,33 @@ function saleHotDogs() {
 
 // document.querySelector('#title').innerHTML = 'Come on in!'
 
-
 // const h4El = document.createElement('h4');
-// h4El.innerText = 'Powered by Javascript'; 
-// document.body.appendChild(h4El); 
+// h4El.innerText = 'Powered by Javascript';
+// document.body.appendChild(h4El);
 
 // //Would only work if the body tag has an id or class attribute
 // const h4El = document.createElement('h4');
-// h4El.innerText = 'Powered by Javascript'; 
+// h4El.innerText = 'Powered by Javascript';
 // const bodyTag = document.querySelector('#id');
-// bodyTag.append(h4El);  
+// bodyTag.append(h4El);
 
+// const h1El = document.getElementById('title');
+// h1El.remove();
 
-// const h1El = document.getElementById('title'); 
-// h1El.remove(); 
-
-// const h1El2 = document.querySelector('#title'); 
-// h1El.remove(); 
+// const h1El2 = document.querySelector('#title');
+// h1El.remove();
 
 // document.getElementById('title').remove();
 
-// document.querySelector('#title').remove(); 
+// document.querySelector('#title').remove();
 
 // const h1titleEl = document.createElement('h1');
 // //Below is incorrect. You don't have to query for the h1 tag you just created.//
 // //You can just access it through the variable h1titleEl.innerText//
 // h1titleEl.querySelector('h1').innerText = 'Welcome Players. Begin the Roman Games';
-// document.body.appendChild(h1titleEl); 
+// document.body.appendChild(h1titleEl);
 
-
-// //This would work. 
+// //This would work.
 // h1titleEl.innerText = 'Welcome Players. Begin the Roman Games';
 // document.body.appendChild(h1titleEl);
 
@@ -720,7 +715,7 @@ addTwoNumbers('Hello', 5) //=> NaN
 
 // };
 
-//Use typeof to distinguish information that is being returned. Can have it return any value if// 
+//Use typeof to distinguish information that is being returned. Can have it return any value if//
 //its not the value you want //
 // console.log(addTwoNumbers('Hello',5));
 
@@ -736,7 +731,6 @@ addTwoNumbers('Hello', 5) //=> NaN
 // console.log(addTwoNumbers2('Hello',2));
 // console.log(addTwoNumbers2(5,10));
 
-
 // function addTwoNumbers(a, b) {
 //   if (typeof a === 'number' && typeof b === 'number') {
 //     return a + b;
@@ -751,7 +745,7 @@ addTwoNumbers('Hello', 5) //=> NaN
 //   arr.forEach(x => console.log(x))
 // }
 
-// iterate(array); 
+// iterate(array);
 // iterate(bagOfVowels);
 
 // function iterateLoop (arr) {
@@ -760,8 +754,8 @@ addTwoNumbers('Hello', 5) //=> NaN
 //   }
 // };
 
-// iterateLoop(array); 
-// iterateLoop(bagOfVowels); 
+// iterateLoop(array);
+// iterateLoop(bagOfVowels);
 
 // function sayHello() {
 //   console.log('Hello');
@@ -774,23 +768,21 @@ addTwoNumbers('Hello', 5) //=> NaN
 // document.querySelector('#generate-greeting').onclick = sayHello;
 // sayHello();
 
-// document.querySelector('#generate-greeting').addEventListener('click', sayHello2); 
+// document.querySelector('#generate-greeting').addEventListener('click', sayHello2);
 
-// document.getElementById('generate-greeting').addEventListener('click', sayHello2); 
-
+// document.getElementById('generate-greeting').addEventListener('click', sayHello2);
 
 // function typed(){
 //   const message = document.getElementById('message').value;
-//   console.log(message); 
+//   console.log(message);
 // }
 
-// document.getElementById('generate-message').addEventListener('click', typed); 
-
+// document.getElementById('generate-message').addEventListener('click', typed);
 
 // function handleClick() {
-//   const newTodo = document.getElementById('new-todo').value; 
+//   const newTodo = document.getElementById('new-todo').value;
 //   const newListItem = document.querySelector('.todos');
-//   newListItem.innerHTML = `<li>${newTodo}</li>`; 
+//   newListItem.innerHTML = `<li>${newTodo}</li>`;
 //   document.getElementById("new-todo").value = null;
 
 // };
@@ -818,10 +810,10 @@ addTwoNumbers('Hello', 5) //=> NaN
 //     sum += array[i]
 //   }
 //     return(sum);
-  
+
 // }
 
-// console.log(sumNumbers(array1)); 
+// console.log(sumNumbers(array1));
 
 /*--- better solution (use forEach unless you have to exit loop early) ---*/
 // function sumNumbers(nums) {
@@ -836,3 +828,750 @@ addTwoNumbers('Hello', 5) //=> NaN
 // function sumNumbers(nums) {
 //   return nums.reduce((sum, num) => sum += num, 0);
 // }
+
+// Recursive functions //
+// function countDown(num){
+//   if(num < 0){
+//     return;
+//   }
+//   console.log(num)
+//   return countDown(num - 1)
+// }
+
+// countDown(0);
+
+// const array = [1,2,3];
+// const array2 = [2, 4, 5, 8]
+// function sumArrayOfNums(arr, index = 0, sum = 0){
+//   if(index === arr.length){
+//       return sum;
+//   }
+//   sum += arr[index];
+//   return sumArrayOfNums(arr, index + 1, sum);
+// }
+
+// or
+
+// function sumArrayOfNums(arr, index, sum){
+//   if(index === arr.length){
+//     return sum;
+//   }
+//   sum += arr[index];
+//   return sumArrayOfNums(arr, index + 1, sum);
+// }
+
+// console.log(sumArrayOfNums(array, 0, 0));
+// console.log(sumArrayOfNums(array2));
+
+// Rest Parameters //
+// Challenge: 04-addList
+// Difficulty: Basic
+// Prompt:
+// - Write a function called addList that accepts any quantity of numbers as arguments, adds them together and returns the resulting sum.
+// - Assume all parameters will be numbers.
+// - If called with no arguments, return 0 (zero).
+// Examples:
+// add(1) //=> 1
+// add(1, 50, 1.23) //=> 52.23
+// add(7, -12) //=> -5
+
+// Hint:  Check out the Further Study section of the JS Functions lesson regarding "rest parameters"
+
+/*--- BEST SOLUTION:  Use rest paramater syntax (ES2015) then reduce ---*/
+// function addList(...nums) {
+//   // nums will be an array containing all arguments
+//   return nums.reduce((sum, num) => sum + num, 0);
+// }
+
+// function addList(...nums) {
+//   let sum = 0;
+//   for (const num of nums) {
+//     sum += num;
+//   }
+//   return sum;
+// }
+
+// console.log(addList());
+
+/*--- make arguments a true array then forEach ---*/
+// function addList() {
+//   let nums = Array.from(arguments);
+//   let sum = 0;
+//   nums.forEach(function(num) {
+//     sum += num;
+//   });
+//   return sum;
+// }
+
+/// Rock paper scissors ///
+// const player = {
+//   currentChoice: null,
+// };
+// const computer = {
+//   currentChoice: null,
+// };
+
+// const choices = ['rock', 'paper', 'scissors'];
+
+// const playerChooses = (event) => {
+//   player.currentChoice = event.target.id;
+//   gameOutcomes();
+// };
+// document.getElementById('rock').addEventListener('click', playerChooses);
+// document.getElementById('paper').addEventListener('click', playerChooses);
+// document.getElementById('scissors').addEventListener('click', playerChooses);
+
+// const computerChooses = () => {
+//   const randomIdx = Math.floor(Math.random() * choices.length);
+//   computer.currentChoice = choices[randomIdx];
+// };
+
+// const displayOutcomes = (outcome) => {
+//   const outcomes = document.createElement('h1');
+//   outcomes.innerText = outcome;
+//   const outcomesContainer = document.getElementById('outcomes-container');
+//   outcomesContainer.append(outcomes);
+// };
+
+// const gameOutcomes = () => {
+//   playerChooses();
+//   computerChooses();
+//   if (player.currentChoice === choices[0]) {
+//     if (computer.currentChoice === choices[1]) {
+//       displayOutcomes(`Player chose rock. Computer chose paper. Computer wins`);
+//     } else if (computer.currentChoice === choices[2]) {
+//       displayOutcomes(
+//         `Player chose rock. Computer chose scissors. Player wins!`
+//       );
+//     } else {
+//       displayOutcomes(`Player chose rock. It's a tie`);
+//     }
+//   }
+//   if (player.currentChoice === choices[1]) {
+//     if (computer.currentChoice === choices[2]) {
+//       displayOutcomes(
+//         `Player chose paper. Computer chose scissors. Computer wins`
+//       );
+//     } else if (computer.currentChoice === choices[0]) {
+//       displayOutcomes(`Player chose paper. Computer chose rock . Player wins!`);
+//     } else {
+//       displayOutcomes(`Player chose paper. It's a tie`);
+//     }
+//   }
+//   if (player.currentChoice === choices[2]) {
+//     if (computer.currentChoice === choices[0]) {
+//       displayOutcomes(
+//         `Player chose scissors. Computer chose rock. Computer wins`
+//       );
+//     } else if (computer.currentChoice === choices[1]) {
+//       displayOutcomes(
+//         `Player chose scissors. Computer chose paper. Player wins!`
+//       );
+//     } else {
+//       displayOutcomes(`Player chose scissors. It's a tie`);
+//     }
+//   }
+// };
+// function padIt(str,n){
+//   //coding here
+//   while (n > 0) {
+//     if (n % 2) {
+//     str = str + "*";
+//     } else {
+//       str = "*" + str;
+//     }
+//     n --;
+//   }
+//   console.log(str);
+// }
+
+// function padIt(str,n){
+//   //coding here
+//   while (n > 0) {
+//     if(n % 2) {
+//       str = "*" + str
+//     } else {
+//       str = str + "*"
+//     }
+//     n --;
+//   }
+//   console.log((str));
+// }
+
+// padIt("a",1);
+// padIt("a",2);
+// padIt("a",3);
+// padIt("a",4);
+// padIt("a",5);
+// padIt("a",-2);
+
+/// Example of a loop statment using break or continue
+// const grabDoll1 = [
+//   'Mickey Mouse',
+//   'Barbie doll',
+//   'Hello Kitty',
+//   'Hello Kitty',
+//   'Hello Kitty',
+//   'Snow white',
+// ];
+
+// function grabDoll(dolls) {
+//   let bag = [];
+//   //coding here
+//   for (let i = 0; i < dolls.length; i++) {
+//     if (dolls[i] === 'Hello Kitty' || dolls[i] === 'Barbie doll') {
+//       bag.push(dolls[i]);
+//     }
+//     if (bag.length === 3) {
+//       break;
+//     }
+//   }
+//   return bag;
+// }
+
+// console.log(grabDoll(grabDoll1));
+
+// function grabDoll(dolls){
+//   var bag=[];
+//   //coding here
+//   for (let i = 0; i < dolls.length; i++) {
+//     if(dolls[i] === "Hello Kitty" || "Barbie doll") { ///I still put both conditions even if I am using || operator. Correct code above.
+//       bag.push(dolls[i]);
+//     } else continue;{///Don't need to use else continue. The condition will have it continue to iterate.
+//   } //This also needs to be removed. Causing a syntax error and the if condition below cannot execute. Or add continue into curly brackets
+//     if (bag.length === 3) {
+//       break;
+//     }
+//       return bag;
+// }
+
+// const books = [];
+// books.push("The Shinning");
+// console.log(books);
+// books.unshift("Moby Dick")
+// console.log(books);
+// books[1] = "Dune";
+// console.log(books);
+// books.splice(1,0,"Great Expectations")
+// console.log(books);
+// books.forEach(function(book) {
+//   console.log(book)
+// })
+// books.forEach(function(book, idx){
+//   console.log(`${idx+1} ${book}`)
+// })
+// for (let book of books) {
+//   console.log(book)
+// };
+
+// const computeRemainder = (a,b) => {
+//   if (b === 0) {
+//     return Infinity
+//   }
+//   return a % b
+// }
+
+// console.log(computeRemainder(10.5, 3));
+
+///My code that did not work ///
+// const range = (x, y) => {
+//   while (x < y) return x + 1;
+
+//   if (y > x) {
+//     return 'First argument must be less than second';
+//   }
+// };
+
+// console.log(range(5, 2));
+
+// /// Instructor code that did work ///
+// function range2(start, finish) {
+//   if (start > finish) return 'First argument must be less than second';
+
+//   let range = [];
+//   for (let n = start; n < finish; n++) {
+//     range.push(n);
+//   }
+//   return range;
+// }
+
+// /// Chat GPT code using while loop ///
+// console.log(range2(5, 2));
+
+// const range3 = (x, y) => {
+//   if (y > x) {
+//     return 'First argument must be less than second';
+//   }
+//   const result = [];
+//   while (x < y) {
+//     result.push(x);
+//     x++;
+//   }
+//   return result.length === 0 ? "First argument must be less than second" : result;
+// };
+
+// console.log(range3(5, 2));
+
+/// Using for in loop ///
+
+// function giveMeFive(obj) {
+//   const array = [];
+//   for (let key in obj) {
+//     if (key.length === 5) {
+//       array.push(key);
+//     }
+//     if (obj[key].length === 5) {
+//       array.push(obj[key]);
+//     }
+//   }
+
+//   return array;
+// }
+
+// /// Created a variable named value within the for loop to hold the value of an object. Easier to understand ///
+
+// function giveMeFive(obj) {
+//   const array = [];
+//   for (let key in obj) {
+//     const value = obj[key];
+//     if (key.length === 5) {
+//       array.push(key);
+//     }
+//     if (value.length === 5) {
+//       array.push(value);
+//     }
+//   }
+
+//   return array;
+// }
+
+// console.log(giveMeFive({Our:"earth",is:"a",beautyful:"world"}))
+// console.log(giveMeFive({Ihave:"enough", money:"to",buy:"a",car:"model"}))
+// console.log(giveMeFive({Pears:"than",apple:"sweet"}))
+
+// /*
+// Exercise 1:
+//   - Define an empty array named foods
+// */
+
+// // Exercise 1 has been completed for you...
+
+// const foods = [];
+
+// console.log('Exercise 1 Result:\n', foods);
+
+// /*
+// Exercise 2:
+//   - Add the strings 'pizza' & 'cheeseburger' to the foods array such that 'pizza' comes before 'cheeseburger'.
+// */
+
+// // Complete Exercise 2 below...
+
+// foods.push('pizza', 'cheeseburger');
+
+// console.log('Exercise 2 Result:\n', foods);
+
+// /*
+// Exercise 3:
+//   - Add the string 'taco' to the foods array so that 'taco' is the first food in the array.
+// */
+
+// // Complete Exercise 3 below...
+// foods.unshift('taco');
+
+// console.log('Exercise 3 Result:\n', foods);
+
+// /*
+// Exercise 4:
+//   - Access the string 'pizza' (based upon its known position) in the foods array and assign to a variable named favFood.
+// */
+
+// // Complete Exercise 4 below...
+
+// const favFood = foods[1];
+
+// console.log('Exercise 4 Result:\n', favFood);
+
+// /*
+// Exercise 5:
+//   - Insert the string 'tofu' in the foods array between 'pizza' & 'cheeseburger'
+// */
+
+// // Complete Exercise 5 below...
+
+// foods.splice(2, 0, 'tofu');
+
+// console.log('Exercise 5 Result:\n', foods);
+
+// /*
+// Exercise 6:
+//   - Replace the string 'pizza' in the foods array with the strings 'sushi' & 'cupcake'.
+// */
+
+// // Complete Exercise 6 below...
+
+// foods.splice(1, 1, 'sushi', 'cupcakes');
+
+// console.log('Exercise 6 Result:\n', foods);
+
+// /*
+// Exercise 7:
+//   - Use the slice method on the foods array to create a new array containing 'sushi' & 'cupcake'.
+//   - Assign the new array to a variable named yummy.
+// */
+
+// // Complete Exercise 7 below...
+
+// const yummy = foods.slice(1, 3);
+
+// console.log('Exercise 7 Result:\n', yummy);
+
+// /*
+// Exercise 8:
+//   - Using the indexOf method on the foods array, assign the index of the 'tofu' string to a variable named soyIdx.
+// */
+
+// // Complete Exercise 8 below...
+
+// const soyIdx = foods.indexOf('tofu');
+
+// console.log('Exercise 8 Result:\n', soyIdx);
+
+// // /*
+// // Exercise 9:
+// //   - Assign to a variable named allFoods the result of joining the strings in the foods array such that the result is the following single string:
+// //     'taco -> sushi -> cupcake -> tofu -> cheeseburger'
+// // */
+
+// // // Complete Exercise 9 below...
+
+// const allFoods = foods.join(' -> ');
+
+// console.log('Exercise 9 Result:\n', allFoods);
+
+// /*
+// Exercise 10:
+//   - Assign a boolean to a variable named hasSoup depending upon whether or not the foods array includes the string 'soup'.
+// */
+
+// // Complete Exercise 10 below...
+
+// const hasSoup = foods.includes('soup');
+
+// console.log('Exercise 10 Result:\n', hasSoup);
+
+// /*
+// Exercise 11:
+//   - Use the forEach method to iterate through the provided nums array and add each odd number to a new array named odds.
+//   - Hint: Initialize the odds variable to an empty array before the iteration.
+// */
+
+// const nums = [100, 5, 23, 15, 21, 72, 9, 45, 66, 7, 81, 90];
+
+// // Complete Exercise 11 below...
+
+// const odds = [];
+// nums.forEach(function (num) {
+//   if (num % 2 !== 0) odds.push(num);
+// });
+
+// console.log('Exercise 11 Result:\n', odds);
+
+// /*
+// Exercise 12:
+//   - Use the forEach method to iterate through the same nums array and add the number to **one** of the following arrays:
+//   fizz, buzz or fizzbuzz - based upon the following:
+//   	- Add to the fizzbuzz array if the number is evenly divisible by 3 & 5.
+//   	- Add to the fizz array if the number is evenly divisible by 3.
+//   	- Add to the buzz array if the number is evenly divisible by 5.
+// */
+
+// // Complete Exercise 12 below...
+// const fizz = [];
+// const buzz = [];
+// const fizzbuzz = [];
+
+// nums.forEach(function (num) {
+//   if (num % 3 === 0) {
+//     fizz.push(num);
+//   }
+//   if (num % 5 === 0) {
+//     buzz.push(num);
+//   }
+//   if (num % 3 === 0 && num % 5 === 0) {
+//     fizzbuzz.push(num);
+//   }
+// });
+
+// console.log('Exercise 12 Results:');
+// console.log('  fizz:', fizz);
+// console.log('  buzz:', buzz);
+// console.log('  fizzbuzz:', fizzbuzz);
+
+/*
+Exercise 13:
+  - Given the below numArrays array of arrays (two-dimensional array), assign the last nested array to a variable named numList.
+  - Assume you don't know how many nested arrays numArrays contains.
+*/
+
+// const numArrays = [
+//   [100, 5, 23],
+//   [15, 21, 72, 9],
+//   [45, 66],
+//   [7, 81, 90],
+// ];
+
+// // Complete Exercise 13 below...
+
+// const numList = numArrays[numArrays.length - 1];
+
+// console.log('Exercise 13 Result:\n', numList);
+
+/*
+Exercise 14:
+  - Given the above numArrays array, access the number 66 and assign to a variable named num.
+*/
+
+// Complete Exercise 14 below...
+
+// const num = numArrays[2][1];
+
+// console.log('Exercise 14 Result:\n', num);
+
+/*
+Exercise 15:
+  - Given the above numArrays array, use nested forEach methods to sum up all the numbers contained within numArrays and assign to a variable named total.
+  - Hint: Be sure to declare and initialize the total variable before the iterations.
+*/
+
+// Complete Exercise 15 below...
+
+// let total = 0;
+// numArrays.forEach(function (arr) {
+//   arr.forEach(function (num) {
+//     total = num + total;
+//   });
+// });
+
+// console.log('Exercise 15 Result:\n', total);
+
+// function reverseUpcaseString(string) {
+//   const reversedString = string.split("").reverse().join("");
+//   return reversedString.toUpperCase();
+// }
+
+// console.log(reverseUpcaseString('SEI Rocks!'));
+
+// function reverseUpcaseString(str) {
+//   let results = '';
+//   for (let i = 0; i < str.length; i++) {
+//     // can use square brackets to access chars in a string
+//     // but using the charAt() method is preferred
+//     results = str.charAt(i).toUpperCase() + results;
+//   }
+//   return (results);
+// }
+
+/// Interating through a string and removing an element in the string. ///
+// function removeEnds(str) {
+//   if (str.length < 3) {
+//     return '';
+//   }
+//   const newString = str.slice(1, -1);
+//   return newString
+// }
+
+// console.log(removeEnds('SEI Rocks!'));
+
+// /*--- Using substr String method ---*/
+// // function removeEnds(str) {
+// //   if (str.length < 3) return '';
+// //   return str.substr(1, str.length - 2);
+// // }
+
+// /*--- Using for loop ---*/
+// function removeEnds(str) {
+//   if (str.length < 3) return '';
+//   let result= '';
+//   for (let i = 1; i < str.length - 1; i++) {
+//     result += str.charAt(i);
+//   }
+//   return result;
+// }
+
+// console.log(planetHasWater("Jupiter"));
+
+// function planetHasWater(planet) {
+//   let planet = planet.toLowerCase();
+//   if (planet === "Earth" || planet === "Mars") {
+//     return true
+//   } else
+//     return false
+// }
+
+// const planetHasWater2 = function(planet) {
+//    const lowerCasePlanet = planet.toLowerCase();
+//   if (lowerCasePlanet === "earth" || lowerCasePlanet === "mars") {
+//     return true;
+//   } else
+//     return false;
+// }
+
+// console.log( planetHasWater2('Earth') ) //=> true
+// console.log( planetHasWater2('Venus') ) //=> false
+// // Test the bonus...
+// console.log( planetHasWater2('mArS') ) //=> true
+
+// shirtPriceAfterTax = shirtPrice * (1 + salesTax);
+// shirtPriceAfterShipping = shirtPriceAfterTax + shippingPrice;
+// shirtPriceAfterShippingRounded = shirtPriceAfterShipping.toFixed(2);
+
+// sweatshirtPriceAfterTax = sweatshirtPrice * (1 + salesTax);
+// sweatshirtPriceAfterShipping = sweatshirtPriceAfterTax + shippingPrice;
+// sweatshirtPriceAfterShippingRounded = sweatshirtPriceAfterShipping.toFixed(2);
+
+// smallPosterPriceAfterTax = smallPosterPrice * (1 + salesTax);
+// smallPosterPriceAfterShipping = smallPosterPriceAfterTax + shippingPrice;
+// smallPosterPriceAfterShippingRounded = smallPosterPriceAfterShipping.toFixed(2);
+
+// largePosterPriceAfterTax = largePosterPrice * (1 + salesTax);
+// largePosterPriceAfterShipping = largePosterPriceAfterTax + shippingPrice;
+// largePosterPriceAfterShippingRounded = largePosterPriceAfterShipping.toFixed(2);
+
+// mugPriceAfterTax = mugPrice * (1 + salesTax);
+// mugPriceAfterShipping = mugPriceAfterTax + shippingPrice;
+// mugPriceAfterShippingRounded = mugPriceAfterShipping.toFixed(2);
+
+// const maxOfThree = function(a,b,c){
+//   if (a > b && a > c) {
+//     return a
+//   } else if (b > a && b > c) {
+//     return b
+//   } else {
+//     return c
+//   }
+// }
+
+// console.log(maxOfThree(3,1,2));
+
+// function isCharAVowel(str) {
+//   if (str === 'a' || str === 'e' || str === 'i' || str === 'o' || str === 'u') {
+//     return true;
+//   }
+//   return false;
+// }
+
+// console.log(isCharAVowel('i'));
+
+// const sumArray = function(arr) {
+//   let result = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     result += arr[i]
+//   }
+//   return result
+// }
+
+// console.log(sumArray([6,12,18]));
+
+// function multiplyArray(nums) {
+//   let result = 1;
+//   for (let num of nums) {
+//     result *= num
+//   }
+//   return result
+// }
+
+// console.log(multiplyArray([2,4,5]));
+
+// const numArgs = function() {
+//   // console.log(arguments)
+//   return arguments.length
+// }
+
+// console.log(numArgs(1,2,3,"a","r",[2,3,5],{over:4, under: 5}));
+
+//rest collects the rest of the arguments of a function and adds them to an array-like object that you can then use. //
+// This approach is more modern and generally preferred over using the arguments object for clarity and consistency. //
+// The rest parameter are denoted by the three dots (...name)
+// const numArgs2 = function(...args) {
+//   // console.log(args);
+//   return args.length;
+// };
+
+// console.log(numArgs2(1, 2, 3, "a", "r", [2, 3, 5], { over: 4, under: 5 }));
+
+// function reversedString(str) {
+//   let newString = str.split('');
+//   let reversed = '';
+//   for (let i = newString.length - 1; i >= 0; i--) {
+//     reversed += newString[i];
+//   }
+//   return reversed;
+// }
+
+// console.log(reversedString('rockstar'));
+
+// function reversedString(str) {
+//   let reversed = '';
+//   for (let i = str.length - 1; i >= 0; i--) {
+//     reversed += str[i];
+//   }
+//   return reversed;
+// }
+
+// console.log(reversedString('rockstar'));
+
+// function reversedString(str) {
+//   let newString = str.split('').reverse().join("")
+//   return newString;
+// }
+
+// console.log(reversedString('rockstar'));
+
+//     function reverseUpcaseString(str) {
+//   let results = '';
+//   for (let i = 0; i < str.length; i++) {
+//     // can use square brackets to access chars in a string
+//     // but using the charAt() method is preferred
+//     results = str.charAt(i).toUpperCase() + results
+
+//   }
+//   return (results);
+// }
+
+// console.log(reverseUpcaseString('rockstar'));
+
+// const longestStringArray = function (arr) {
+  
+// }
+
+
+// // console.log(longestStringArray(['say', 'hello', 'in', 'the', 'morning']));
+// // Wrong. You cannot find the answer by manipulating the existing array. You have to create a new array to manipulate //
+// // Then push the values you want into the new array //
+// function stringLongerThan(arr, num) {
+//   // You don't have an empty array to add values into
+//   for(let i=0; i < arr.length; i++) {
+//     if (arr[i].length > num) {
+//       return arr[i]; // You should be pushing the new values that meet the condition into the new array and returning the new array //
+//     }
+//   }
+// }
+
+// console.log(stringLongerThan(['say', 'hello', 'in', 'the', 'morning'], 3));
+
+
+// // Correct way to complete the function // 
+// function stringsLongerThan(arr, num) {
+//   const result = [];
+  
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i].length > num) {
+//       result.push(arr[i]);
+//     }
+//   }
+
+//   return result;
+// }
+
+// console.log(stringsLongerThan(['say', 'hello', 'in', 'the', 'morning'], 3));
